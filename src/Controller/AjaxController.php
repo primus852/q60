@@ -3,7 +3,9 @@
 namespace App\Controller;
 
 use primus852\ShortResponse\ShortResponse;
+use Swift_Mailer;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -12,9 +14,10 @@ class AjaxController extends AbstractController
     /**
      * @Route("/_ajax/_sendAppointment", name="ajaxSendAppointment")
      * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\JsonResponse
+     * @param Swift_Mailer $mailer
+     * @return JsonResponse
      */
-    public function sendAppointment(Request $request)
+    public function sendAppointment(Request $request, Swift_Mailer $mailer)
     {
 
         /**
@@ -51,6 +54,27 @@ class AjaxController extends AbstractController
         /**
          * @todo Send Mail
          */
+        $message = (new \Swift_Message('Hello Email'))
+            ->setFrom('kontakt@zahnarzt-kudamm-berlin.de')
+            //->setTo('praxis@zahnarzt-kudamm-berlin.de')
+            ->setTo('tw@mitscom.de')
+            ->setBody(
+                $this->renderView(
+                    'default/email.html.twig',array(
+                        'firstname' => $firstname,
+                        'lastname' => $lastname,
+                        'app_date' => $date,
+                        'app_time' => $time,
+                        'email' => $email,
+                        'phone' => $phone,
+                        'dentist' => $dentist,
+                    )
+                ),
+                'text/html'
+            )
+        ;
+
+        $mailer->send($message);
 
         return ShortResponse::success('Anfrage gesendet');
 
