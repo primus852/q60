@@ -1,0 +1,157 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Willkommen!{% endblock %}
+
+{% block body %}
+    <section id="hero-bg-parallax" class="hero h-100 overflow-hidden p-0 w-100">
+        <div class="bg-img-parallax bg-philosophie"></div>
+        <div class="h-100 right-20 bottom-10 position-absolute w-100">
+            <div class="row align-items-center h-100 no-gutters">
+                <div class="col align-self-end text-right tw-hero-text">
+                    Gute Aussichten.
+                </div>
+            </div>
+        </div>
+        <div class="h-100 left-10 position-absolute top-25 w-100">
+            <div class="row">
+                <div class="text-center tw-book-now">
+                    <a id="js-open-book" href="#animatedModal">
+                        ONLINE<br/>
+                        TERMIN<br/>
+                        BUCHEN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-900 section-divider">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-7">
+                <div class="col col-xl-3 col-12 px-0">
+                    <img src="{{ asset('assets/img/Q60_Zahnarztpraxis_24.jpg') }}" class="img-fluid w-100"/>
+                </div>
+                <div class="col col-xl-3 col-12 col- bg-teal">
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome">
+                            Warum Q60?
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome-text">
+                            <div class="row justify-content-center">
+                                <div class="col-11">
+                                    <p>
+                                        Als vor einigen Jahren mein Leben immer unübersichtlicher und schneller wurde, habe ich beschlossen, eine kreative Pause einzulegen. Auf der Sucher nach einer sinnvollen Idee entschied ich mich, den Kilimandscharo zu besteigen, mit fast 6.000m Höhe der höchste Berg Afrikas.
+                                    </p>
+                                    <p>
+                                        Es war ein echtes Abenteuer. Eine Herausforderung, die mich an meine Grenzen brachte. Ängste wollten überwunden werden. Und Lösungen gefunden. Während meines Aufenthalts in Afrika erkannte ich, dass ein Besuch beim Zahnarzt für viele Menschen genauso fordernd ist wie für mich die Besteigung des Kilimandscharo. Ich weiß also genau, was Sie fühlen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-900 section-divider">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col" style="padding: 0;">
+                    <img src="{{ asset('assets/img/Q60_Zahnarztpraxis_Philosophie.jpg') }}" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-900 section-divider">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-7">
+                <div class="col col-xl-3 col-12 bg-teal">
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome">
+                            Kurz und schmerzlos
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome-text">
+                            <div class="row justify-content-center">
+                                <div class="col-11">
+                                    <p>
+                                        Wäre das nicht ein Traum: Sie gehen zum Zahnarzt, haben sich angemeldet, auf einen der schönen Designerstühle gesetzt und sich eine Zeitschrift gegriffen - und schon führt Sie Anita in den Behandlungsraum.
+                                    </p>
+                                    <p>
+                                        Sie hätten gern noch den angefangenen Artikel zu Ende gelesen? Sorry, das muss dann bis nach der Behandlung warten. Denn wir sind stolz darauf, dass es bei uns so gut wie keine Wartezeiten gibt - alles eine Frage der guten Organisation.
+                                    </p>
+                                    <p>
+                                        Natürlich gibt es Ausnahmen - aber das sollen Sie auch bleiben. Und nicht zur Regel werden.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-xl-3 col-12 px-0">
+                    <img src="{{ asset('assets/img/q60_corinna_peschke_3.jpg') }}" class="img-fluid w-100"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white section-divider bg-philosophie-service">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-8">
+                <div class="col-xl-8 col-12">
+                    <div class="row justify-content-center mb-8">
+                        <div class="col col-xl-3 col-12 bg-yellow">
+                            <div class="row">
+                                <div class="col-12 tw-box-philosophie font-base text-center">
+                                    <h1>persönlich</h1>
+                                    <img src="{{ asset('assets/img/icons/Q60-icons-02.png') }}" class="img-fluid" alt="freundlich Q60" />
+                                    <br />
+                                    <br />
+                                    Fühlen Sie sich bei uns willkommen.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-1 col-12">
+                            &nbsp;
+                        </div>
+                        <div class="col col-xl-3 col-12 bg-yellow">
+                            <div class="row">
+                                <div class="col-12 tw-box-philosophie font-base text-center">
+                                    <h1>präzise</h1>
+                                    <img src="{{ asset('assets/img/icons/Q60-icons-01.png') }}" class="img-fluid" alt="fachgerecht Q60" />
+                                    <br />
+                                    <br />
+                                    Unsere Praxis ist immer auf dem neuesten Stand.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-1 col-12">
+                            &nbsp;
+                        </div>
+                        <div class="col col-xl-3 col-12 bg-yellow">
+                            <div class="row">
+                                <div class="col-12 tw-box-philosophie font-base text-center">
+                                    <h1>professionell</h1>
+                                    <img src="{{ asset('assets/img/icons/Q60-icons-03.png') }}" class="img-fluid" alt="flexibel Q60" />
+                                    <br />
+                                    <br />
+                                    Mit uns können Sie alles besprechen.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block stylesheets %}
+{% endblock %}
+{% block javascripts %}
+    <script>
+        var get_nav = 'philosophie';
+    </script>
+{% endblock %}

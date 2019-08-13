@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Willkommen!{% endblock %}
+
+{% block body %}
+    <section id="hero-bg-parallax" class="hero h-100 overflow-hidden p-0 w-100">
+        <div class="bg-img-parallax"></div>
+        <div class="h-100 left-0 position-absolute top-0 w-100">
+            <div class="container h-100">
+                <div class="row align-items-center h-100 justify-content-center no-gutters">
+                    HERO_TEXT
+                </div>
+            </div>
+        </div>
+        <div class="h-100 left-10 position-absolute top-25 w-100">
+            <div class="row">
+                <div class="text-center tw-book-now">
+                    <a id="js-open-book" href="#animatedModal">
+                    ONLINE<br />
+                    TERMIN<br />
+                    BUCHEN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-900 section-divider">
+        <div class="container-fluid">
+            BODY
+        </div>
+    </section>
+{% endblock %}
+{% block stylesheets %}
+{% endblock %}
+{% block javascripts %}
+    <script>
+        var get_nav = 'blank';
+    </script>
+{% endblock %}

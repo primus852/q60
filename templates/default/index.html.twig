@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Willkommen!{% endblock %}
+
+{% block body %}
+    <section id="hero-bg-parallax" class="hero h-100 overflow-hidden p-0 w-100">
+        <div class="bg-img-parallax bg-main"></div>
+        <div class="h-100 left-0 position-absolute top-0 w-100">
+            <div class="container h-100">
+                <div class="row align-items-center h-100 justify-content-center no-gutters">
+                    <div class="col-lg-6 text-center" style="background: #000000;">
+                        <div class="row justify-content-center" style="padding:25px;">
+                            <div class="col-lg-11" style="border:1px solid white;color:white;">
+                                <div class="row h-100">
+                                    <div class="col-12 my-auto mx-auto tw-box-index">
+                                        &nbsp;<br/>
+                                        Wartezimmer?<br/>
+                                        Gibt es bei uns nicht.<br/>
+                                        Wir nennen es unsere Besucherbibliothek.
+                                        <br/>&nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-100 left-10 position-absolute top-25 w-100">
+            <div class="row">
+                <div class="text-center tw-book-now">
+                    <a id="js-open-book" href="#animatedModal">
+                    ONLINE<br />
+                    TERMIN<br />
+                    BUCHEN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-900 section-divider">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-7">
+                <div class="col col-xl-3 col-lg-6 col-12 px-0">
+                    <img src="{{ asset('assets/img/q60_corinna_peschke_1.jpg') }}" class="img-fluid w-100"/>
+                </div>
+                <div class="col col-xl-3 col-lg-6 col-12 bg-teal">
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome">
+                            Willkommen!
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome-text">
+                            <div class="row justify-content-center">
+                                <div class="col-11" id="text-welcome">
+                                    <p>
+                                        Ja, ich weiß - für die meisten Menschen ist ein Besuch beim Zahnarzt im besten Fall ein notwendiges Übel - im schlimmsten Fall das Unangenehmste, was das Leben so für Sie bereit hält
+                                    </p>
+                                    <p>
+                                        Wäre es nicht schön, wenn eine Zahnbehandlung so angenehm sein könnte wie eine Verabredung im Café? Ein Galeriespaziergang oder ein Treffen mit Freunden?
+                                    </p>
+                                    <p>
+                                        Entspannt. Föhlich. Etwas, worauf man sich freut.
+                                    </p>
+                                    <p>
+                                        Genau so soll Ihr Besuch bei uns werden. Kommen Sie vorbei. Wir wollen mal sehen, ob wir das gemeinsam schaffen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block stylesheets %}
+{% endblock %}
+{% block javascripts %}
+    <script>
+        var get_nav = '';
+    </script>
+{% endblock %}

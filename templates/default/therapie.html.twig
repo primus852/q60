@@ -1,0 +1,369 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Willkommen!{% endblock %}
+
+{% block body %}
+    <section id="hero-bg-parallax" class="hero h-100 overflow-hidden p-0 w-100">
+        <div class="bg-img-parallax bg-therapie"></div>
+        <div class="h-100 right-10 bottom-0 position-absolute w-100">
+            <div class="row align-items-center h-100 no-gutters">
+                <div class="col align-self-end text-right tw-hero-text">
+                    Nehmen Sie Platz!
+                </div>
+            </div>
+        </div>
+        <div class="h-100 left-10 position-absolute top-25 w-100">
+            <div class="row">
+                <div class="text-center tw-book-now">
+                    <a id="js-open-book" href="#animatedModal">
+                        ONLINE<br/>
+                        TERMIN<br/>
+                        BUCHEN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-yellow section-divider">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-7">
+                <div class="col col-xl-3 col-12 bg-gray-900">
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome text-white">
+                            Mund? Gesund!
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome-text text-white">
+                            <div class="row justify-content-center">
+                                <div class="col-11">
+                                    <p>
+                                        Unser Ziel ist es, Ihre Zähne schön und Ihre Mundgesundheit insgesamt aufrecht zu erhalten. Das verlangt den Einsatz unterschiedlichster Therapien. Von der Prophylaxe über die Wurzelkanal- bis hin zur
+                                        Parodontitis-Behandlung. Und sollte ein Zahn mal nicht zu retten sein, stellen wir Ihnen diverse Möglichkeiten des Zahnersatzes vor.
+                                    </p>
+                                    <p>
+                                        Mit Mund und Zähnen hängt aber auch der Kiefer zusammen - auch hier bieten wir modernste Diagnostik- und Therapiemöglichkeiten an.
+                                    </p>
+                                    <p>
+                                        Miteinander sprechen ist ein guter Anfang. Wir freuen uns, wenn Sie einen Termin mit uns vereinbaren.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-xl-3 col-12 px-0">
+                    <img src="{{ asset('assets/img/Q60_Zahnarztpraxis_32.jpg') }}" class="img-fluid w-100"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white section-divider">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-8">
+                <div class="col col-12 text-center">
+                    <h1 style="margin-bottom:2rem !important;">Behandlungsmethoden</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-6" style="font-size:1.5em;margin-bottom:2rem !important;">
+                            Wenn Sie Fragen zu bestimmten Behandlungsmethoden haben, vereinbaren Sie bitte telefonisch oder per E-Mail einen Termin.
+                            <br/>
+                            <span style="font-style: italic;font-size:0.9em;">Nähere Informationen zu den einzelnen Themen erhalten Sie per Klick auf die entsprechende Überschrift.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row justify-content-center mb-8">
+                <div class="col col-xl-3 col-12">
+                    <div class="row">
+                        <div class="col-12 tw-box-therapie bg-yellow" data-target="wurzel">
+                            <h1 class="tw-h1" id="h1-wurzel">Zahnerhalt Wurzelkanalbehandlung<br />– natürliche Zähne ein Leben lang</h1>
+                            <div class="text-pink text-to-hide" id="js-text-wurzel" style="display:none;">
+                                Wer möchte einen Zahn schon einfach ziehen lassen? Niemand! Gut, dass Ihre natürlichen Zähne
+                                heute auch bei tiefgreifenden Entzündungen Ihres Wurzelkanals meistens lebenslang erhalten werden
+                                können. Dafür nutzen wir unsere hochmoderne technische Ausstattung für eine effektive und
+                                gleichzeitig sanfte Reinigung, Aufbereitung und Versiegelung der Wurzelkanäle. Feinste Instrumente,
+                                eine hochpräzise Technik und schonende Methoden sorgen im Rahmen unserer professionellen
+                                endodontischen Maßnahmen für einen planbaren Behandlungserfolg.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-xl-1 col-0">
+                    &nbsp;
+                </div>
+                <div class="col col-xl-3 col-12">
+                    <div class="row">
+                        <div class="col-12 tw-box-therapie text-white bg-gray-900" data-target="fuellung">
+                            <h1 class="tw-h1" id="h1-fuellung">Füllungen nach einer Kariesbehandlung</h1>
+                            <div class="text-pink text-to-hide" id="js-text-fuellung" style="display:none;">
+                                <p>
+                                    Welche Materialien werden zum Auffüllen des Defektes (sog. Kavität) heute verwendet?
+                                </p>
+                                <p style="text-decoration: underline;">Direkte Füllung</p>
+                                <p>Laut Kasse ist nur eine ausreichende, zweckmäßige und wirtschaftliche Versorgung erforderlich.</p>
+                                <p>
+                                    Für die klassische Kassenfüllung wird hierbei <strong>Glasionomerzement</strong> als Werkstoff verwendet. Der
+                                    Vorteil liegt in der anfänglichen Remineralisierung der Zahnhartsubstanz, weil dieses Material Fluorid
+                                    enthält und dieses dann während des Abbindemechanismus freisetzt. Weniger zufriedenstellend ist
+                                    seine geringere Festigkeit, was zu "Auswaschungen" oder sogar zu Brüchen des Materials führen
+                                    kann.Nachteilig ist auch seine weißlich-opake Farbe, die sich deutlich von der Zahnfarbe abhebt.
+                                </p>
+                                <p>
+                                    Qualitativ hochwertiger ist der Werkstoff <strong>Komposit</strong>, ein Kunststoff, der durch seine kleinsten
+                                    Füllkörper eine deutlich bessere Festigkeit aufweist. Er wird in einer Mehrschichttechnik aufgebracht,
+                                    wodurch sowohl eine farbliche Gestaltung der Füllung, als auch eine der natürlichen Zahnform
+                                    ähnliche gestaltete Oberfläche und Kontaktpunkt zum Nachbarzahn ermöglicht werden. Komposit-
+                                    Füllungen bedürfen aufgrund des Mehraufwandes (Schichttechnik, Trockenlegung) einer Zuzahlung je
+                                    nach Aufwand. Hierbei rechnen wir die Kassen-Standardfüllung inklusive Begleitleistungen
+                                    (Betäubungsspritze etc.) mit Ihrer Kasse ab und stellen den Differenzbetrag über eine private
+                                    Behandlungsvereinbarung (sog. Mehrkostenvereinbahrung) in Rechnung.
+                                </p>
+                                <p style="text-decoration: underline;">Indirekte Füllung</p>
+                                <p>
+                                    Diese hochwertigen Einlagerestaurationen werden nach der in der Praxis vorausgegangenen
+                                    Präparation der Kavität sowie nach deren Abformung im zahntechnischen Labor hergestellt. Um den
+                                    Zahn während der Herstellungszeit nicht ungeschützt zu lassen, wird am Zahnarztstuhl ein
+                                    Provisorium angefertigt. Das laborgefertigte Inlay bzw. die laborgefertigte Teilkrone wird dann an
+                                    einem zweiten Termin adhäsiv (Klebeverbund) befestigt. Empfehlenswert ist dabei die Verwendung
+                                    des Werkstoffes Keramik, da dieser neben der hervorragenden ästhetischen Komponente diverse
+                                    andere Vorteile mit sich bringt, z. B. die absolute Farbbeständigkeit und die hohe biologische
+                                    Verträglichkeit.
+                                </p>
+                                <p>
+                                    Sollen im Frontzahnbereich Formveränderungen der Zahnkrone erzielt werden, lassen sich sog.
+                                    Veneers (Verblendschalen) aus hochwertiger Keramik herstellen und aufbringen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="row justify-content-center mb-8">
+                <div class="col col-xl-3 col-12">
+                    <div class="row">
+                        <div class="col-12 tw-box-therapie bg-yellow" data-target="zahnersatz">
+                            <h1 class="tw-h1" id="h1-zahnersatz">Zahnersatz - natürlich ästhetisch</h1>
+                            <div class="text-pink text-to-hide" id="js-text-zahnersatz" style="display:none;">
+                                Nach dem Verlust eines oder mehrerer Zähne machen vollkeramische Versorgungen am meisten
+                                Sinn. Sie sind nicht nur aus ästhetischer Sicht die beste Lösung, auch ihre Haltbarkeit ist erstklassig.
+                                Moderne Hochleistungskeramik sieht echt aus und fühlt sich völlig natürlich an. Erreicht wird dies zum
+                                einen durch die guten Materialeigenschaften der Restaurationen, die sich durch eine starke
+                                Belastbarkeit, hohe Haltbarkeit, Biokompatibilität und Verträglichkeit sowie eine besonders glatte
+                                Oberfläche auszeichnen. Zum anderen ermöglicht die naturnahe, präzise und patientenindividuelle
+                                Planung und Gestaltung des Zahnersatzes mithilfe moderner Computertechnologie eine perfekte
+                                Passgenauigkeit und damit optimale Funktionalität Ihres Zahnersatzes, sei es Zahnbrücke,
+                                Zahnkrone, Voll- oder Teilkrone oder implantatgetragener Zahnersatz.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-xl-1 col-0">
+                    &nbsp;
+                </div>
+                <div class="col col-xl-3 col-12">
+                    <div class="row">
+                        <div class="col-12 tw-box-therapie text-white bg-gray-900" data-target="zahnreinigung">
+                            <h1 class="tw-h1" id="h1-zahnreinigung">Professionelle Zahnreinigung</h1>
+                            <div class="text-pink text-to-hide" id="js-text-zahnreinigung" style="display:none;">
+                                Hartnäckige Beläge bilden sich gern an schwer erreichbaren Stellen im Mundraum. In den
+                                Zahnzwischenräumen und Zahnfleischtaschen können sich dadurch entzündliche Erkrankungen des
+                                Zahnfleischs oder kariöse Infektionen bilden. Dagegen hilft eine regelmäßige professionelle
+                                Zahnreinigung durch unser Prophylaxeteam. Die anschließende Politur der Zahnoberflächen und die
+                                Versiegelung mit einem speziellen Fluoridlack sorgt für eine langanhaltende Vorbeugung gegen
+                                Beläge.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="row justify-content-center mb-8">
+                <div class="col col-xl-3 col-12">
+                    <div class="row">
+                        <div class="col-12 tw-box-therapie text-white bg-gray-900" data-target="generation">
+                            <h1 class="tw-h1" id="h1-generation">Generation 50+</h1>
+                            <div class="text-pink text-to-hide" id="js-text-generation" style="display:none;">
+                                Zähne und Zahnfleisch werden im Alter anfälliger für bakterielle Erkrankungen wie Karies oder
+                                Parodontitis. Entzündliche Keime aus der Mundhöhle können sogar Folgeerkrankungen wie
+                                Schlaganfall oder Stoffwechselerkrankungen begünstigen. Durch unsere sorgfältige Beratung und
+                                professionelle Zahnreinigung stellen wir sicher, dass Ihre Zähne gepflegt und bestmöglich vor
+                                Erkrankungen geschützt sind und Ihnen bis ins späte Alter erhalten bleiben.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-xl-1 col-0">
+                    &nbsp;
+                </div>
+                <div class="col col-xl-3 col-12">
+                    <div class="row">
+                        <div class="col-12 tw-box-therapie bg-yellow" data-target="parodont">
+                            <h1 class="tw-h1" id="h1-parodont">Parodontalbehandlung</h1>
+                            <div class="text-pink text-to-hide" id="js-text-parodont" style="display:none;">
+                                <p>
+                                    Fühlt sich Ihr Zahnfleisch dauerhaft angespannt an, blutet es, bilden sich Entzündungen nicht zurück,
+                                    oder leiden Sie bereits unter Zahnfleischtaschen und Lockerungen Ihrer Zähne? Dann besteht
+                                    möglicherweise eine Parodontitis, eine Entzündung des Zahnhalteapparates.
+                                </p>
+                                <p>
+                                    Die Parodontitis ist eine bakteriell bedingte Entzündung. Mehr als die Hälfte der Bevölkerung ist davon
+                                    betroffen. Eine anfängliche Parodontitis ist für den Patienten zunächst schmerzlos.
+                                    Erste Anzeichen einer Parodontitis können sein:
+                                </p>
+                                <ul>
+                                    <li>Zahnfleischbluten</li>
+                                    <li>Schwellung des Zahnfleischs</li>
+                                    <li>Zahnfleischrückgang</li>
+                                    <li>Temperaturempfindlichkeit</li>
+                                    <li>Mundgeruch</li>
+                                </ul>
+                                <p>
+                                    Zahnfleischtaschen zwischen Zahnwurzel und Knochen sind selbst schwer zu reinigen – und können
+                                    zu Zahnverlust führen. Bleibt die Parodontitis unbehandelt können weitere gesundheitliche
+                                    Risikofaktoren für Diabetes und Herz- Kreislauferkrankungen entstehen sowie Frühgeburten auslösen.
+                                    Raucher unterliegen einem 6-8 fach höheren Risiko, an Parodontitis zu erkranken.
+                                </p>
+                                <p>
+                                    Voraussetzung einer umfassenden Parodontitisbehandlung ist eine Vorbehandlung mittels
+                                    eingehender Mundhygieneunterweisung und professioneller Zahnreinigung sowie der Anfertigung
+                                    eines Röntgenbildes. Danach erfolgt das exakte Ausmessen aller vorhandenen Zahnfleischtaschen
+                                    (Parodontalstatus). Die Taschenreinigung findet unter lokaler Betäubung statt und ist für den
+                                    Patienten schmerzfrei.
+                                </p>
+                                <p>
+                                    Bei einer schon weit fortgeschrittenen Parodontitis kann eventuell ein chirurgisches Vorgehen
+                                    notwendig sein, parallel dazu ist unter Umständen eine antibiotische Therapie erforderlich.
+                                </p>
+                                <p>
+                                    Ein Patient mit einer diagnostizierten Parodontitis bleibt auch nach erfolgreicher Therapie lebenslang
+                                    ein Risikopatient und sollte regelmäßige Nachbehandlungen erhalten. Die professionelle
+                                    Zahnreinigung dient auch hierbei der Stabilisierung des erreichten Behandlungsergebnisses und sollte
+                                    je nach Erkrankungsrisiko 2-4-mal im Jahr erfolgen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="row justify-content-center mb-8">
+                <div class="col col-xl-3 col-12">
+                    <div class="row">
+                        <div class="col-12 tw-box-therapie text-white bg-gray-900" data-target="kiefer">
+                            <h1 class="tw-h1" id="h1-kiefer">Kiefergelenksdiagnostik/-therapie<br />– wenn der Biss nicht stimmt</h1>
+                            <div class="text-pink text-to-hide" id="js-text-kiefer" style="display:none;">
+                                <p>Das menschliche Kausystem besteht aus Zähnen, Kiefern, Kaumuskeln und Kiefergelenken. Ist das
+                                    Zusammenspiel dieser Komponenten gestört, spricht man von Craniomandibulärer Dysfunktion.
+                                    Kopfschmerzen, Rückenverspannungen oder sogar Tinnitus können die Folge sein.
+                                </p>
+                                <p>
+                                    Einer der Gründe für eine Craniomandibuläre Dysfunktion kann z. B. ein Abrasionsgebiss sein, bei
+                                    dem vor allem die Frontzähne, teils aber auch die Seitenzähne im Lauf der Jahre immer kürzer
+                                    werden. Die fortschreitende Zahnabrasion, die einen Zahnsubstanzverlust von mehrere Millimetern
+                                    verursachen kann, wird meist zwar als unästhetisch empfunden, denn die Zähne sind beim Sprechen
+                                    und Lachen kaum noch zu sehen. Doch ein Zahnsubstanzverlust von diesen Ausmaßen ist nicht nur
+                                    ein Schönheitsfehler.
+                                </p>
+                                <p>
+                                    Die Ursachen für den Abrieb der Zähne sind unterschiedlich. Genetisch bedingte Fehlstellungen der
+                                    Zähne können Auslöser sein, bei einem Großteil der Betroffenen jedoch ist besonders nächtliches
+                                    Pressen und Knirschen mit den Zähnen verantwortlich. Aber auch schlecht sitzender Zahnersatz in
+                                    Form von Kronen, Füllungen oder Brücken können zu einem "falschen Biss" führen.
+                                </p>
+                                <p>
+                                    Durch eine manuelle Untersuchung und die Vermessung Ihres Kiefergelenks kann Ihre exakte
+                                    Bisslage bestimmt werdem. Speziell angefertigte Korrekturschienen können hier bereits helfen,
+                                    sowohl als Entlastungsschienen für Knirscher als auch Schnarcherschienen.
+                                </p>
+                                <p>
+                                    Eine ursächliche Therapie liefert eine diagnostische Oberkiefer-Aufbissschiene. Durch ihren Einsatz
+                                    wird der "richtige Biss" ermittelt, in Bezug zu den Kiefergelenken. Daraus können prothetische
+                                    Maßnahmen zur Wiederherstellung der physiologischen Bisshöhe, also zum Ausgleich des
+                                    Zahnsubstanzverlusts, erfolgen. Ein diagnostisches Wax-up gibt zeigt den Umfang und erlaubt dem
+                                    Patienten vorab ein Bild über die geplanten Aufbaumaßnahmen.
+                                </p>
+                                <p>
+                                    Ein neues Verfahren, das für die Analyse einer Craniomandibulären Dysfunktion hervorragende
+                                    Resultate liefert, ist das Zebris JMA-System. JMA steht für Jaw Movement Analysis
+                                    (Kieferbewegungsanalyse). Das 3D-Ultraschall-Messgerät dokumentiert die Bewegungen des
+                                    Unterkiefers sowie das Verhältnis des Unterkiefers zum Schädel. Diese Vermessung ist einerseits
+                                    präzise, schmerzfrei und zeitsparend, zum anderen werden die Daten digital erhoben, sodass eine
+                                    optimale Zusammenarbeit zwischen Zahnarzt und Dentallabor möglich ist. Eventuell benötigter
+                                    Zahnersatz wird passgenau auf die individuellen Kieferverhältnisse des Patienten angefertigt – und
+                                    Fehlfunktionen werden nachhaltig beseitigt.
+                                </p>
+                                <p>
+                                    Wir sorgen dafür, dass der Biss wieder stimmt: ob durch Anpassung der natürlichen Zähne oder
+                                    hochwertigen Zahnersatz. Sollten in Ihrem Fall Ursachen für die Craniomandibuläre Dysfunktion
+                                    vorliegen, die nicht in unserem Fachbereich liegen, verweisen wir Sie gern an andere medizinische
+                                    Kollegen wie Physiotherapeuten und Orthopäden.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-xl-1 col-0">
+                    &nbsp;
+                </div>
+                <div class="col col-xl-3 col-12">
+                    <div class="row">
+                        <div class="col-12 tw-box-therapie bg-yellow" data-target="prophy">
+                            <h1 class="tw-h1" id="h1-prophy">Implantat-Prophylaxe</h1>
+                            <div class="text-pink text-to-hide" id="js-text-prophy" style="display:none;">
+                                Implantate sollen möglichst ein Leben lang halten. Allerdings sind Zahnimplantate im Gegensatz zu
+                                natürlichen Zähnen einem höheren Risiko ausgesetzt, von Bakterien befallen zu werden – vor allem
+                                bei mangelhafter Mundhygiene. Durch regelmäßige Kontrolle und professionelle Zahnreinigung kann
+                                die Langlebigkeit der Implantate deutlich erhöht werden. Auch die Sorgfalt des Patienten bei der
+                                täglichen gewissenhaften Pflege von Zähnen, Zahnzwischenräumen und Zahnfleisch ist unbedingt
+                                erforderlich. Wir unterstützen Sie mit hilfreichen Tipps für eine implantat- und zahnschonende
+                                Ernährung und die optimale Zahnpflege bei implantatgetragenen Versorgungen.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block stylesheets %}
+{% endblock %}
+{% block javascripts %}
+    <script>
+        var get_nav = 'therapie';
+        $(document).ready(function () {
+
+            $('.tw-box-therapie').click(function () {
+
+                //$('.text-to-hide').hide();
+
+                var $btn = $(this);
+                var target = $btn.attr('data-target');
+                var $target = $('#js-text-' + target);
+                var $heading = $('#h1-' + target);
+
+                if ($target.is(':hidden')) {
+                    $heading.hide();
+                    $target.slideDown('normal',function(){
+                        /*$("body").niceScroll().resize();*/
+                    });
+                } else {
+                    $target.slideUp('normal',function(){
+                        /*$("body").niceScroll().resize();*/
+                    });
+                    $heading.show()
+                }
+
+
+
+            });
+
+        });
+
+    </script>
+{% endblock %}

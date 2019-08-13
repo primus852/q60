@@ -1,0 +1,148 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Willkommen!{% endblock %}
+
+{% block body %}
+    <section id="hero-bg-parallax" class="hero h-100 overflow-hidden p-0 w-100">
+        <div class="bg-img-parallax bg-team"></div>
+        <div class="h-100 right-10 bottom-0 position-absolute w-100">
+            <div class="row align-items-center h-75 no-gutters">
+                <div class="col align-self-end text-right tw-hero-text">
+                    Schöne Perspektive!
+                </div>
+            </div>
+        </div>
+        <div class="h-100 left-10 position-absolute top-25 w-100">
+            <div class="row">
+                <div class="text-center tw-book-now">
+                    <a id="js-open-book" href="#animatedModal">
+                        ONLINE<br/>
+                        TERMIN<br/>
+                        BUCHEN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-yellow">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-7">
+                <div class="col col-xl-3 col-12 col- bg-gray-900 text-white">
+                    <div class="row">
+                        <div class="col-12 tw-box-team">
+                            Darf ich vorstellen?
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-12 tw-box-team-text">
+                            <div class="row justify-content-center">
+                                <div class="col-11">
+                                    <p>
+                                        Alle Mitglieder unseres Teams verfügen über langjährige Erfahrung in der Zahnmedizin - und in den Tätigkeiten, die in einer Zahnarztpraxis anfallen.
+                                    </p>
+                                    <p>
+                                        Ob Terminvereinbarung oder Prophylaxe, ob Patientenbetreuung oder Behandlung - in unserer Praxis Q60 sind Sie bei jedem Teammitglied in den allerbesten Händen.
+                                    </p>
+                                    <p>
+                                        Freundlichkeit, Sorgfalt, Umsicht, Gesprächsbereitschaft - wir sind für Sie da, dass Sie sich bei uns rundum wohl und gut versorgt fühlen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-xl-3 col-12 px-0">
+                    <img src="{{ asset('assets/img/q60_corinna_peschke_2.jpg') }}" class="img-fluid w-100"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-yellow section-divider section-team">
+        <div class="row no-gutters">
+            <div class="col col-xl-3 col-12 bg-gray-900 text-white tw-box-quote">
+                &quot;Willkommen in unserer Praxis - in einem der schönsten Häuser am Kurfürstendamm, Eingang Leibnizstraße.&quot;
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&dash;Corinna
+            </div>
+            <div class="col col-xl-3 col-12">
+                <img src="{{ asset('assets/img/q60_corinna_peschke_team_corinna.jpg') }}" class="img-fluid"/>
+            </div>
+            <div class="col col-xl-3 col-12 bg-gray-900 text-pink tw-box-quote">
+                &quot;Ich stehe Ihnen zur Seite - direkt neben dem Zahnarztstuhl.&quot;
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&dash;Margrit
+            </div>
+            <div class="col col-xl-3 col-12">
+                <img src="{{ asset('assets/img/q60_corinna_peschke_team_daniela.jpg') }}" class="img-fluid"/>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col col-xl-3 col-12">
+                <img src="{{ asset('assets/img/q60_corinna_peschke_team_karsten.jpg') }}" class="img-fluid"/>
+            </div>
+            <div class="col col-xl-3 col-12 bg-gray-900 text-white tw-box-quote">
+                &quot;Begeben Sie sich vertrauensvoll in meine erfahrenen Zahnarzthände!&quot;
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&dash;Karsten
+            </div>
+            <div class="col col-xl-3 col-12">
+                <img src="{{ asset('assets/img/q60_corinna_peschke_team_claudia.jpg') }}" class="img-fluid"/>
+            </div>
+            <div class="col col-xl-3 col-12 bg-gray-900 text-white tw-box-quote">
+                &quot;Ich freue mich, Sie in unserer Praxis willkommen zu heißen!&quot;
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&dash;Claudia
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col col-xl-3 col-12 bg-gray-900 text-white tw-box-quote">
+                &quot;Darf ich Sie demnächst bei uns empfangen?&quot;
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&dash;Anita
+            </div>
+            <div class="col col-xl-3 col-12">
+                <img src="{{ asset('assets/img/q60_corinna_peschke_team_anita.jpg') }}" class="img-fluid"/>
+            </div>
+            <div class="col col-xl-3 col-12 bg-gray-900 text-white tw-box-quote">
+                &quot;Ich stehe Ihnen zur Seite - direkt neben dem Zahnarztstuhl.&quot;
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&dash;Daniela
+            </div>
+            <div class="col col-xl-3 col-12">
+                <img src="{{ asset('assets/img/q60_corinna_peschke_team_daniela_2.jpg') }}" class="img-fluid"/>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col col-xl-3 col-12">
+                <img src="{{ asset('assets/img/q60_corinna_peschke_team_stanja.jpg') }}" class="img-fluid"/>
+            </div>
+            <div class="col col-xl-3 col-12 bg-gray-900 text-pink tw-box-quote">
+                &quot;Sauber und rein - Prophylaxe muss sein!&quot;
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&dash;Stanija
+            </div>
+            <div class="col col-xl-3 col-12 bg-gray-900 tw-box-quote">
+                &nbsp;
+            </div>
+            <div class="col col-xl-3 col-12 bg-gray-900 tw-box-quote">
+                &nbsp;
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block stylesheets %}
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('node_modules/masonyry-layout/dist/masonry.pkgd.min.js') }}"></script>
+    <script>
+        var get_nav = 'team';
+    </script>
+{% endblock %}

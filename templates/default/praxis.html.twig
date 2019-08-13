@@ -1,0 +1,106 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Willkommen!{% endblock %}
+
+{% block body %}
+    <section id="hero-bg-parallax" class="hero h-100 overflow-hidden p-0 w-100">
+        <div class="bg-img-parallax bg-praxis"></div>
+        <div class="h-100 right-15 bottom-10 position-absolute w-100">
+            <div class="row align-items-center h-100 no-gutters">
+                <div class="col align-self-end text-right tw-hero-text">
+                    Keine Angst!
+                </div>
+            </div>
+        </div>
+        <div class="h-100 left-10 position-absolute top-25 w-100">
+            <div class="row">
+                <div class="text-center tw-book-now">
+                    <a id="js-open-book" href="#animatedModal">
+                        ONLINE<br/>
+                        TERMIN<br/>
+                        BUCHEN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-900 section-divider">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-7">
+                <div class="col col-xl-3 col-12 px-0">
+                    <img src="{{ asset('assets/img/q60_corinna_peschke_praxis.jpg') }}" class="img-fluid w-100"/>
+                </div>
+                <div class="col col-xl-3 col-12 col- bg-teal">
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome tw-box-welcome-smaller">
+                            &quot;Mein erstes völlig angstfreies Rendezvous.&quot;
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome-text">
+                            <div class="row justify-content-center">
+                                <div class="col-11">
+                                    <p>
+                                        Früher hat mir schon der Anblick eines Zahnarzt-Stuhls weiche Knie beschert. Die Viertelstunde im Wartezimmer war die Hölle für mich. Das Geräusch surrender Bohrer, der Geruch nach Desinfektionsmitteln - die Panikattacke ließ nicht lange auf sich warten.
+                                        Voruntersuchungen? Fehlanzeige. Zum Zahnarzt ging ich nur, wenn ich wirklich keine Ausrede mehr gefunden habe.
+                                        Und heute? Vor ein paar Monaten wurde mir Q Sechzig empfohlen, die Zahnaztpraxis am Kudamm in Charlottenburg.
+                                        Freundliche Mitarbeiter. Tolle Atmosphäre. Schöne Einrichtung. Und: perfekte Behandlung. Ein Vorgespräch, das mir meine Ängste genommen hat. Die genau Aufzählung aller notwendigen Maßnahmen. Das gute Gefühl, ernst genommen und umfassend informiert zu werden.
+                                        Und plötzlich gehe ich richtig gern zum Zahnarzt...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white section-divider">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-8">
+                <div class="col col-12 px-0 text-center">
+                    <h1 style="margin-bottom:2rem !important;">Das ist unsere Praxis</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-8">
+                <div class="col col-lg-9 col-12 text-center">
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item">
+                            <img src="{{ asset('assets/img/gallery/Q60_Zahnarztpraxis_14.jpg') }}" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="{{ asset('assets/img/gallery/Q60_Zahnarztpraxis_15.jpg') }}" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="{{ asset('assets/img/gallery/Q60_Zahnarztpraxis_16.jpg') }}" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="{{ asset('assets/img/gallery/Q60_Zahnarztpraxis_17.jpg') }}" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="{{ asset('assets/img/gallery/Q60_Zahnarztpraxis_18.jpg') }}" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="{{ asset('assets/img/gallery/Q60_Zahnarztpraxis_21.jpg') }}" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="{{ asset('assets/img/gallery/Q60_Zahnarztpraxis_19.jpg') }}" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="{{ asset('assets/img/gallery/Q60_Zahnarztpraxis_20.jpg') }}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block stylesheets %}
+{% endblock %}
+{% block javascripts %}
+    <script>
+        var get_nav = 'praxis';
+    </script>
+{% endblock %}

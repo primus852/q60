@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Willkommen!{% endblock %}
+
+{% block body %}
+    <section id="hero-bg-parallax" class="hero h-100 overflow-hidden p-0 w-100">
+        <div class="bg-img-parallax bg-lage"></div>
+        <div class="h-100 right-10 bottom-0 position-absolute w-100">
+            <div class="row align-items-center h-100 no-gutters">
+                <div class="col align-self-end text-right tw-hero-text">
+                    Zum Genießen!
+                </div>
+            </div>
+        </div>
+        <div class="h-100 left-10 position-absolute top-25 w-100">
+            <div class="row">
+                <div class="text-center tw-book-now">
+                    <a id="js-open-book" href="#animatedModal">
+                        ONLINE<br/>
+                        TERMIN<br/>
+                        BUCHEN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-900 section-divider">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-7">
+                <div class="col col-xl-3 col-12 px-0">
+                    <img src="{{ asset('assets/img/Q60_Zahnarztpraxis_4.jpg') }}" class="img-fluid w-100"/>
+                </div>
+                <div class="col col-xl-3 col-12 col- bg-teal">
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome">
+                            Prächtig!
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-12 tw-box-welcome-text">
+                            <div class="row justify-content-center">
+                                <div class="col-11">
+                                    <p>
+                                        Unsere Praxis befindet sich in einem der schönsten und prachtvollsten Häuser am Kurfürstendamm in Berlin. Es wurde 1905-07 von den Architekten und Bauherren Hans Toebelmann und Henry Gross errichtet.
+                                    </p>
+                                    <p>
+                                        Dem üppig geschmückten Äußeren entsprach im Inneren der luxuriöse Zuschnitt der Wohnungen mit je elf Zimmern auf 580 m², davon sechs besonders aufwendig ausgestaltete Gesellschaftszimmer.
+                                    </p>
+                                    <p>
+                                        Bitte beachten Sie, dass sich der Zugang zur Praxis in der Leibnizstraße befindet, also direkt um die Ecke vom Kurfürstendamm.
+                                    </p>
+                                    <p>
+                                        <br />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block stylesheets %}
+{% endblock %}
+{% block javascripts %}
+    <script>
+        var get_nav = 'lage';
+    </script>
+{% endblock %}

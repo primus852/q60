@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Willkommen!{% endblock %}
+
+{% block body %}
+    <section id="hero-bg-parallax" class="hero h-100 overflow-hidden p-0 w-100">
+        <div id="map-large" style="width: 100%; height: 100%; background: grey;position:relative;z-index:1;"></div>
+        <div class="h-100 right-10 bottom-0 position-absolute w-100">
+            <div class="row align-items-center h-100 no-gutters">
+                <div class="col align-self-end text-right tw-hero-text">
+                    Zum Genießen!
+                </div>
+            </div>
+        </div>
+        <div class="h-100 left-10 position-absolute top-25 w-100">
+            <div class="row">
+                <div class="text-center tw-book-now">
+                    <a id="js-open-book" href="#animatedModal">
+                        ONLINE<br/>
+                        TERMIN<br/>
+                        BUCHEN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-900 section-divider text-white">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-8">
+                <div class="col col-12 text-center">
+                    <h1>Kontakt</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-6" style="font-size:1.5em;">
+                            Wir sind jederzeit und sehr für Sie da!
+                            <br />
+                            Falls Sie uns telefonisch nicht erreichen, schreiben Sie uns eine E-Mail.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row justify-content-center mb-8" style="font-size:1.7em;line-height:1.2em;">
+                <div class="col col-lg-9 col-12 text-center">
+                    Q60 Zahnarztpraxis<br />
+                    Kurfürstendamm 60<br />
+                    (Eingang Leibnizstraße)<br />
+                    10707 Berlin<br />
+                    <br />
+                    Tel. (030) 50 17 96 90<br />
+                    praxis@zahnarzt-kudamm-berlin.de
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="row justify-content-center mb-8" style="font-size:1.2em;line-height:1.2em;">
+                <div class="col col-lg-3 col-12 text-center">
+                    <img src="{{ asset('assets/img/icons/icon1.png') }}" alt="U-Bahn Q60" class="img-fluid" style="max-width:95px !important;" /><br />
+                    Der Adenauer Platz (U7) is in 10 Minuten fußläufig erreichbar
+                </div>
+                <div class="col col-lg-3 col-12 text-center">
+                    <img src="{{ asset('assets/img/icons/icon2.png') }}" alt="U-Bahn Q60" class="img-fluid" style="max-width:95px !important;" /><br />
+                    Kurfürstendamm 60 (Eingang Leibnizstraße), 10707 Berlin. Die Einfahrt zur Parkgarage befindet sich direkt hinter dem Walter-Benjamin-Platz. Die Parkmöglichkeiten sind kostenpflichtig.
+                </div>
+                <div class="col col-lg-3 col-12 text-center">
+                    <img src="{{ asset('assets/img/icons/icon3.png') }}" alt="U-Bahn Q60" class="img-fluid" style="max-width:95px !important;" /><br />
+                    Die nächste Haltestelle (Olivaer Platz) ist ca. 75m entfernt
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            &nbsp;
+        </div>
+    </section>
+{% endblock %}
+{% block stylesheets %}
+{% endblock %}
+{% block javascripts %}
+    <script>
+        var get_nav = 'kontakt';
+    </script>
+{% endblock %}
