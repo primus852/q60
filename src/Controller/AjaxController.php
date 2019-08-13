@@ -54,10 +54,10 @@ class AjaxController extends AbstractController
         /**
          * @todo Send Mail
          */
-        $message = (new \Swift_Message('Hello Email'))
+        $message = (new \Swift_Message('Neue Terminanfrage'))
             ->setFrom('kontakt@zahnarzt-kudamm-berlin.de')
-            //->setTo('praxis@zahnarzt-kudamm-berlin.de')
-            ->setTo('tw@mitscom.de')
+            ->setTo('praxis@zahnarzt-kudamm-berlin.de')
+            //->setTo('tw@mitscom.de')
             ->setBody(
                 $this->renderView(
                     'default/email.html.twig',array(
