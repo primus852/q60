@@ -30,6 +30,8 @@ const ps = new PerfectScrollbar('body',{
         $sendAppointment = $('#js-send-appointment'),
         $bookResponse = $('#js-book-response'),
         $dentist = $('#dentist'),
+        $reason = $('#reason'),
+        $message = $('#message'),
         $firstname = $('#firstname'),
         $lastname = $('#lastname'),
         $email = $('#email'),
@@ -119,6 +121,8 @@ const ps = new PerfectScrollbar('body',{
 
             $.post($sendAppointment.attr('data-url'), {
                 dentist: $dentist.val(),
+                reason: $reason.val(),
+                message: $message.val(),
                 firstname: $firstname.val().trim(),
                 lastname: $lastname.val().trim(),
                 email: $email.val().trim(),

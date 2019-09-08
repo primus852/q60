@@ -179,6 +179,14 @@ body{
     z-index: 21;
 }
 
+.tw-sub-hero{
+    position: absolute;
+    font-size: 2vw;
+    left: 15vw;
+    text-align: left !important;
+    bottom: -6vw;
+}
+
 .tw-box-book{
     padding:25px;
 }
@@ -195,7 +203,7 @@ body{
 }
 
 .tw-h1{
-    font-size:2rem !important;
+    font-size:2vw !important;
     margin: 0;
     position: absolute;
     top: 50%;

@@ -24,6 +24,8 @@ class AjaxController extends AbstractController
          * Gather vars
          */
         $dentist = $request->get('dentist');
+        $reason = $request->get('reason');
+        $messageText = $request->get('message');
         $firstname = $request->get('firstname');
         $lastname = $request->get('lastname');
         $email = $request->get('email');
@@ -68,6 +70,8 @@ class AjaxController extends AbstractController
                         'email' => $email,
                         'phone' => $phone,
                         'dentist' => $dentist,
+                        'reason' => $reason,
+                        'message' => $messageText,
                     )
                 ),
                 'text/html'
