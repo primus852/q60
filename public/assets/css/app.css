@@ -209,6 +209,13 @@ body{
     top: 50%;
     transform: translate(0, -50%);
 }
+.tw-h1-smaller{
+    font-size:1.7vw !important;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
 
 .tw-input-select{
     min-height: 56px;
