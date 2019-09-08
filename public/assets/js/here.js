@@ -35,7 +35,7 @@ if(mapLargeExists !== null){
     addMarkersToMap(mapLarge, true);
 }
 var ui = H.ui.UI.createDefault(map, defaultLayers, 'de-DE');
-ui.removeControl('mapsettings');
+//ui.removeControl('mapsettings');
 
 
 addMarkersToMap(map, false);
