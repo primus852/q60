@@ -28,8 +28,8 @@ var map = new H.Map(
     document.getElementById('map'),
     defaultLayers.vector.normal.map,
     {
-        zoom: 10,
-        center: { lat: 52.5, lng: 13.4 }
+        zoom: 14,
+        center: { lat: 52.501221, lng: 13.313309 }
     });
 
 var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
@@ -40,8 +40,8 @@ if(mapLargeExists !== null){
         document.getElementById('map-large'),
         defaultLayers.vector.normal.map,
         {
-            zoom: 10,
-            center: { lat: 52.5, lng: 13.4 }
+            zoom: 14,
+            center: { lat: 52.501221, lng: 13.313309 }
         });
 
 
