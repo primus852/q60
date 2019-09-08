@@ -16,9 +16,9 @@ function addMarkersToMap(map, isLarge) {
 }
 
 var platform = new H.service.Platform({
-    apikey: 'LONwTgDh2UEdzowV7pfDqawIGWj0NptNaRHL8AWPswg',
-    useHTTPS: true
+    'apikey': 'LONwTgDh2UEdzowV7pfDqawIGWj0NptNaRHL8AWPswg'
 });
+
 var pixelRatio = window.devicePixelRatio || 1;
 var defaultLayers = platform.createDefaultLayers({
     tileSize: pixelRatio === 1 ? 256 : 512,
