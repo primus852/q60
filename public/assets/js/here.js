@@ -52,7 +52,5 @@ function addMarkersToMap(map, isLarge) {
         map.addObject(q60Car);
     }
     map.setZoom(16);
-    map.setBaseLayer(defaultLayers.vector.normal.traffic);
-    map.addLayer(defaultLayers.vector.normal.trafficincidents);
     map.setCenter({lat:52.501221, lng:13.31339});
 }
