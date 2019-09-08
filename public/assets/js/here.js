@@ -20,29 +20,28 @@ var platform = new H.service.Platform({
 });
 
 var pixelRatio = window.devicePixelRatio || 1;
-var defaultLayers = platform.createDefaultLayers({
-    tileSize: pixelRatio === 1 ? 256 : 512,
-    ppi: pixelRatio === 1 ? undefined : 320
-});
+var defaultLayers = platform.createDefaultLayers();
 
 var mapLargeExists = document.getElementById('map-large');
 
-var map = new H.Map(document.getElementById('map'),
-    defaultLayers.normal.map,{
-        center: {lat:50, lng:5},
-        zoom: 4,
-        pixelRatio: pixelRatio
+var map = new H.Map(
+    document.getElementById('map'),
+    defaultLayers.vector.normal.map,
+    {
+        zoom: 10,
+        center: { lat: 52.5, lng: 13.4 }
     });
 
 var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 behavior.disable(H.mapevents.Behavior.WHEELZOOM);
 
 if(mapLargeExists !== null){
-    var mapLarge = new H.Map(document.getElementById('map-large'),
-        defaultLayers.normal.map,{
-            center: {lat:50, lng:5},
-            zoom: 12,
-            pixelRatio: pixelRatio
+    var mapLarge = new H.Map(
+        document.getElementById('map-large'),
+        defaultLayers.vector.normal.map,
+        {
+            zoom: 10,
+            center: { lat: 52.5, lng: 13.4 }
         });
 
 
