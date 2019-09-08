@@ -32,15 +32,15 @@ if(mapLargeExists !== null){
     var behaviorLarge = new H.mapevents.Behavior(new H.mapevents.MapEvents(mapLarge));
     behaviorLarge.disable(H.mapevents.Behavior.WHEELZOOM);
     var uiLarge = H.ui.UI.createDefault(mapLarge, defaultLayers);
-    addMarkersToMap(mapLarge, true, defaultLayers);
+    addMarkersToMap(mapLarge, true);
 }
 var ui = H.ui.UI.createDefault(map, defaultLayers, 'de-DE');
 ui.removeControl('mapsettings');
 
 
-addMarkersToMap(map, false, defaultLayers);
+addMarkersToMap(map, false);
 
-function addMarkersToMap(map, isLarge, defaultLayers) {
+function addMarkersToMap(map, isLarge) {
 
     var icon = new H.map.Icon("assets/img/marker.png");
     var iconCar = new H.map.Icon("assets/img/parking.png");
