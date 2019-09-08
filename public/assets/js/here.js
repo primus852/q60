@@ -16,8 +16,7 @@ function addMarkersToMap(map, isLarge) {
 }
 
 var platform = new H.service.Platform({
-    app_id: '1Zrmzzrwrp94ZgKziH0U',
-    app_code: 'DowR8SW25jqeEpWX7Ba-cw',
+    apikey: 'LONwTgDh2UEdzowV7pfDqawIGWj0NptNaRHL8AWPswg',
     useHTTPS: true
 });
 var pixelRatio = window.devicePixelRatio || 1;
