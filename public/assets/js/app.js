@@ -88,9 +88,16 @@ const ps = new PerfectScrollbar('body',{
     $document.ready(function () {
 
         /** Add Menu Class */
-        if(get_nav !== 'undefined'){
-            $('#nav-'+get_nav).addClass('nav-active');
+        if (get_nav !== 'undefined') {
+            $('#nav-' + get_nav).addClass('nav-active');
         }
+
+        /** Fit Texts */
+        $('.fit-text-loose').fitText(0.6, {maxFontSize: '30px'});
+        $('.fit-text').fitText(1.2, {maxFontSize: '30px'});
+        $('.fit-text-hard').fitText(1.7, {maxFontSize: '30px'});
+        $('.fit-text-harder').fitText(2, {maxFontSize: '30px'});
+        $('.fit-text-hardest').fitText(2.5, {maxFontSize: '30px'});
 
         /*
         * Modal
@@ -106,7 +113,7 @@ const ps = new PerfectScrollbar('body',{
         $sendAppointment.on('click', function (e) {
             e.preventDefault();
 
-            if($sendAppointment.hasClass('disabled')){
+            if ($sendAppointment.hasClass('disabled')) {
                 return false;
             }
 
@@ -157,7 +164,7 @@ const ps = new PerfectScrollbar('body',{
             columnWidth: '.grid-sizer'
         });
 
-        $grid.imagesLoaded().progress( function() {
+        $grid.imagesLoaded().progress(function () {
             $grid.masonry();
         });
 
@@ -178,8 +185,7 @@ const ps = new PerfectScrollbar('body',{
 
                 /** Toggle Logo */
                 //$logoImg.attr('src', $logoImg.attr('data-src-small')).css('height', '75px');
-            }
-            else {
+            } else {
 
                 /** Shrink navigation */
                 //$header.removeClass('shrink');
@@ -258,7 +264,12 @@ const ps = new PerfectScrollbar('body',{
             var $bgImgParallax = $('.bg-img-parallax');
 
             // Init controller
-            var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+            var controller = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: 'onEnter',
+                    duration: '200%'
+                }
+            });
 
             $bgImgParallax.each(function () {
                 var selector = '#' + $(this).parent().attr('id');
@@ -431,8 +442,7 @@ const ps = new PerfectScrollbar('body',{
                     if (data === true) {
                         $btnForm.html(okMessage);
                         $form.find('input[type="text"], input[type="email"], select, textarea').val('');
-                    }
-                    else {
+                    } else {
                         $btnForm.html(errorMessage);
                     }
 
@@ -450,4 +460,6 @@ const ps = new PerfectScrollbar('body',{
             });
         }
     });
+
+
 })(jQuery);

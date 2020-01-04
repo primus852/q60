@@ -1,5 +1,5 @@
 var platform = new H.service.Platform({
-    'apikey': 'LONwTgDh2UEdzowV7pfDqawIGWj0NptNaRHL8AWPswg'
+    'apikey': 'xGHf_PEcFNarx8qj0Vh8enB6NN9dbvR-P5m4XimjceY'
 });
 
 var pixelRatio = window.devicePixelRatio || 1;
