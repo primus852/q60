@@ -277,16 +277,25 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-12 col-sm-6">
-                                                <input type="text" class="tw-input js-required" id="date" data-required="Wunschdatum" placeholder="Wunschdatum *">
+                                                <input type="text" class="tw-input js-required" id="date"
+                                                       data-required="Wunschdatum" placeholder="Wunschdatum *">
                                             </div>
                                             <div class="col-12 col-sm-6">
-                                                <input type="text" class="tw-input js-required" id="time" data-required="Wunschzeit" placeholder="Wunschzeit *">
+                                                <input type="text" class="tw-input js-required" id="time"
+                                                       data-required="Wunschzeit" placeholder="Wunschzeit *">
                                             </div>
                                         </div>
                                         <br/>
                                         <div class="row justify-content-center">
+                                            <div class="col-12 col-sm-6 text-danger">
+                                                Bitte beachten Sie, dass wir Terminanfragen erst ab dem 27.09.2021
+                                                wieder entgegennehmen.
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center">
                                             <div class="col-12 col-sm-6">
-                                                <a href="#" id="js-send-appointment" class="btn btn-sm btn-block btn-teal" data-url="{{ path('ajaxSendAppointment') }}">Absenden</a>
+                                                <a href="#" id="js-send-appointment"
+                                                   class="btn btn-sm btn-block btn-teal" data-url="{{ path('ajaxSendAppointment') }}">Absenden</a>
                                             </div>
                                         </div>
                                     </div>
